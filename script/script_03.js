@@ -5,4 +5,3 @@ function pyramid() {
 }
 
 pyramid()
-

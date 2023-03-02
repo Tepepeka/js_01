@@ -57,4 +57,3 @@ function bookDelete133712AndSort(){
 }
 
 bookDelete133712AndSort()
-
