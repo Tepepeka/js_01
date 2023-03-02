@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- if favicon can't load -->
+  <link rel="shortcut icon" href="#">
+
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <!--JavaScript-->
+  <!--Grafikart
+  <script>
+
+    //variables
+    let a = 'Hi'
+    let b = 'bitch'
+    const notes = [
+      13,
+      18,
+      9,
+      'puf',
+      [1,2,3]
+    ]
+  
+    const person = {
+      name: 'jeremy',
+      city: 'Toulouse city zou',
+      job:{
+        name:'dev',
+        hours: 34
+      }
+    }
+
+    //conditions
+    const age = 17
+    const country = 'IRL'
+   
+    if (
+      (country === 'US' && age >=16)
+      || 
+      (country === 'FR' && age >= 18)
+      ){
+      console.log('u can drive');
+    } else {
+      console.log('u can\'t drive');
+    }
+  
+    switch (country){
+      case 'IRL':
+        console.log('WHISKY');
+        break
+      case 'PL':
+        console.log('VOKDA');
+        break
+      default:
+        console.log('GIN');
+        break
+    }
+  
+    const c = prompt('first number')
+    const d = prompt('second number')
+    const result = c * d
+    let sign
+    if (isNaN(result)){
+      console.log(`Not possible:${c}x${d}`);
+    } else {
+      if (result > 0){
+        sign = 'positive'
+      } else {
+        sign = 'negative'
+      }
+      console.log(`${c}x${d}=${result} is ${sign}`);
+    }
+
+    //boucles
+    let i = 0
+    while (i < 10){
+      console.log(`hi bitch${i+1}`);
+      i ++
+    }
+
+    for (let i = 0; i < 10; i++){
+      console.log(i);
+    }
+
+    const prices = [12,18,89]
+    for (let i = 0; i < prices.length; i++){
+      console.log(prices[i]);
+    }
+
+    for (let i in prices){
+      console.log(prices[i]);
+    }
+
+    for (let price of prices){
+      console.log(price);
+    }
+
+    let number = prompt("Number plz!")
+    if (number > 10 || number < 0){
+      console.log('need a number between 0 to 10');
+    } else {
+      while (number >= 0){
+        console.log(number);
+        number --
+      }
+      for (let i = number; i >=0; i--){
+      console.log(i);
+      }
+    }
+
+    let guess2 = 8
+    let number2
+    while (number2 !== guess2){
+      number2 = prompt('ur number?') * 1
+      if (number2 < guess2){
+        console.log('too low bro!');
+      } else if (number2 > guess2){
+        console.log('too high bro!');
+      }
+    }
+    console.log('gg bro!');
+
+    let guess3 = 8
+    let number3
+    while (true){
+      number3 = prompt('ur number?') * 1
+      if (number3 < guess3){
+        console.log('too low bro!');
+      } else if (number3 > guess3){
+        console.log('too high bro!');
+      } else {
+        break
+      }
+    }
+    console.log('gg bro!');
+
+    //fonctions
+    function canDrive (age,country){
+      if(
+        (age >= 18 && country === 'FR') ||
+        (age >= 16 && country === 'US')
+      ){
+        return true
+      }
+      return false
+    }
+
+    console.log(canDrive(17,'FR'));
+    console.log(canDrive(17,'US'));
+
+    function greeting(name){
+      console.log(`Hi ${name}!`);
+    }
+
+    greeting('jeremy')
+    greeting('laura')
+
+    function myFunction(){
+      console.log(this);
+    }
+
+    myFunction.call(3)
+
+    const me = {
+      first_name:'jeremy',
+      alias:'tppk',
+      full_name:function(){
+        console.log(`${this.first_name} alias ${this.alias}`);
+      }
+    }
+
+    me.full_name()
+
+    console.log('Hi bitch'.toLocaleUpperCase());
+
+    const myFunction2 = (params1, params2) => {
+      console.log(params1,params2);
+    }
+
+    myFunction2(3,25)
+
+    const isPair = function (a, cb) {
+      if (a % 2 === 0) {
+        cb(a)
+      }
+    }
+
+    isPair(4, function(n) {
+      console.log(`${n} is pair`);
+    })
+
+    //exercices
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * (max + 1))
+    }
+    const solution = getRandomInt(10)
+
+    function isRight(n) {
+      return solution === n
+    }
+
+    function guessNumber() {
+      const user_number = prompt("Enter a number plz") * 1
+      return isRight(user_number)
+    }
+
+    for (let i=0; i < 3; i++) {
+      if(guess()) {
+        console.log('gg bro!');
+        break;
+      } else if ( i === 2)
+        console.log('U loose!');
+    }
+
+    function isPremier(n) {
+      if (n < 2) {
+        return false
+      }
+      for (let i = n - 1; i > 1; i--) {
+        if (n % i === 0) {
+          return false
+        }
+      }
+      return true
+    }
+
+    console.log('0',isPremier(0))
+  </script>
+  -->
+
+  <script src='script/script_04.js'></script>
+
+</body>
+</html>
