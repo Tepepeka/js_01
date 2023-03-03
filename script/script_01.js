@@ -1,6 +1,6 @@
 function greeting(){
   const name = prompt('Enter ur name!')
-  console.log(`Hi ${name}!`);
+  return `Hi ${name}!`;
 }
 
-greeting()
+console.log(greeting())
